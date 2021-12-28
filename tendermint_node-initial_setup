@@ -1,4 +1,4 @@
-# If using VPS, Open Termianl & Login As Root
+# Written form the perspective of using Ubuntu with a provider, but most of this will apply if you are running a physical machine as well.
 $ ssh root@ipaddress
 
 # Update & Upgrade Repos
@@ -37,7 +37,7 @@ $ which go
 
 # SSH Port
 $ sudo nano /etc/ssh/sshd_config
-# Uncomment 'Port 22' and change '22' to 'xxxx'
+# Uncomment 'Port 22' and change '22' to 'xxxx' (xxxx = custom port #)
 # CTRL+X and save your file
 $ sudo systemctl restart sshd
 
@@ -48,22 +48,23 @@ $ sudo ufw allow xxxx
 $ sudo ufw allow 26656
 $ sudo ufw allow 9090
 $ sudo ufw allow from youripaddress to any port 26657
-$ ufw enable
+$ sudo ufw enable
 
-# Confirm UFW port is open for ssh
-$ ufw status
+# Confirm with UFW that port xxxx is open for ssh
+$ sudo ufw status
 
-# Setup UFW Service
-$ systemctl enable ufw
+# Setup UFW Service at Boot
+$ sudo systemctl enable ufw
 
 # Confirm UFW Service is active
-$ systemctl status ufw
+$ sudo systemctl status ufw
 
-# Check SSH Port is xxxx & UFW Port xxxx is open
+# Double Check SSH Port is xxxx in sshd_config & UFW Port xxxx is open
 $ cat /etc/ssh/sshd_config
 $ ufw status
 
 # Exit and test ssh as user with new port (if not, try root. if not, try virtual terminal via provider to fix)
+# Or open a second terminal and test the login, and if it doesn't work you are still logged in the first terminal to make fixes instead
 $ exit
 $ ssh -p xxxx user@ipaddress
 
@@ -98,4 +99,11 @@ $ ssh -p xxxx root@ipaddress
 
 end
 
-After this, node is ready for setup. Each node should have an up to date guide on their GitHub to get started.
+After this, node is ready for setup. Each node should have an up to date guide on their GitHub or Docs pages to get started.
+
+Some examples
+BitCanna https://docs.bitcanna.io/guides/validator-setup-guide
+Chihuahua https://github.com/ChihuahuaChain/mainnet
+Cosmos https://github.com/cosmos/gaia/blob/main/docs/hub-tutorials/join-mainnet.md
+Osmosis https://github.com/osmosis-labs/osmosis
+Secret https://github.com/scrtlabs/SecretNetwork/blob/master/docs/validators-and-full-nodes/run-full-node-mainnet.md
