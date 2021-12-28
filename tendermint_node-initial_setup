@@ -1,0 +1,101 @@
+# If using VPS, Open Termianl & Login As Root
+$ ssh root@ipaddress
+
+# Update & Upgrade Repos
+$ apt update && apt upgrade -y
+
+# Add Users
+$ adduser username
+
+# Give User Sudo
+$ usermod username -aG sudo
+
+# Switch to user
+$ su - username
+
+# Install Standard Dependencies
+$ sudo apt install make build-essential gcc git jq chrony -y
+
+# Install go
+$ wget https://golang.org/dl/go1.17.5.linux-amd64.tar.gz
+$ tar -C /usr/local -xzf go1.17.5.linux-amd64.tar.gz
+
+# Setup go in .profile
+$ cat <<EOF >> ~/.profile
+>export GOROOT=/usr/local/go
+>export GOPATH=$HOME/go
+>export GO111MODULE=on
+>export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+>EOF
+
+# Reset shell session
+source ~/.profile
+
+# Look for go
+$ go version
+$ which go
+
+# SSH Port
+$ sudo nano /etc/ssh/sshd_config
+# Uncomment 'Port 22' and change '22' to 'xxxx'
+# CTRL+X and save your file
+$ sudo systemctl restart sshd
+
+# UFW Rules
+$ sudo ufw default allow outgoing
+$ sudo ufw default deny incoming
+$ sudo ufw allow xxxx
+$ sudo ufw allow 26656
+$ sudo ufw allow 9090
+$ sudo ufw allow from youripaddress to any port 26657
+$ ufw enable
+
+# Confirm UFW port is open for ssh
+$ ufw status
+
+# Setup UFW Service
+$ systemctl enable ufw
+
+# Confirm UFW Service is active
+$ systemctl status ufw
+
+# Check SSH Port is xxxx & UFW Port xxxx is open
+$ cat /etc/ssh/sshd_config
+$ ufw status
+
+# Exit and test ssh as user with new port (if not, try root. if not, try virtual terminal via provider to fix)
+$ exit
+$ ssh -p xxxx user@ipaddress
+
+# Test root
+$ sudo -i
+$ exit
+
+# Restrict Root Login
+$ sudo nano /etc/ssh/sshd_config
+# Change PermitRootLogin from "Yes" to "No", confirm it is uncommented
+# CTRL+X and Save
+$ systemctl restart sshd
+
+# Double check
+$ ufw status
+$ systemctl status ufw
+$ cat /etc/ssh/sshd_config
+$ go version
+$ which go
+$ which rustup
+
+# Exit Root & User
+$ history -c
+$ rm ~/.bash_history
+$ exit
+$ history -c
+$ rm ~/.bash_history
+$ exit
+
+# Verify Root Login is Disabled
+$ ssh -p xxxx root@ipaddress
+
+end
+
+After this, node is ready for setup. Each node should have an up to date guide on their GitHub to get started.
