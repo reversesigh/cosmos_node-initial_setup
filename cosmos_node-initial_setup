@@ -47,7 +47,10 @@ $ sudo ufw default deny incoming
 $ sudo ufw allow xxxx
 $ sudo ufw allow 26656
 $ sudo ufw allow 9090
+
+# Open 26657 to your specific machine's IP address to connect to your node to use cli client from local machine
 $ sudo ufw allow from youripaddress to any port 26657
+
 $ sudo ufw enable
 
 # Confirm with UFW that port xxxx is open for ssh
