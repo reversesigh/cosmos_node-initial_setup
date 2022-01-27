@@ -6,12 +6,14 @@ $ apt update && apt upgrade -y
 
 # Add Users
 $ adduser username
+$ adduser nodename
 
 # Give User Sudo
 $ usermod username -aG sudo
+$ usermod nodename -aG sudo
 
-# Switch to user
-$ su - username
+# Switch to Node user
+$ su - nodename
 
 # Install Standard Dependencies
 $ sudo apt install make build-essential gcc git jq chrony -y
