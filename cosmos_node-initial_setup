@@ -82,21 +82,16 @@ $ exit
 $ sudo nano /etc/ssh/sshd_config
 # Change PermitRootLogin from "Yes" to "No", confirm it is uncommented
 # CTRL+X and Save
-$ systemctl restart sshd
+$ sudo systemctl restart sshd
 
 # Double check
-$ ufw status
-$ systemctl status ufw
+$ sudo ufw status
+$ sudo systemctl status ufw
 $ cat /etc/ssh/sshd_config
 $ go version
 $ which go
 
 # Exit Root & User
-$ history -c
-$ rm ~/.bash_history
-$ exit
-$ history -c
-$ rm ~/.bash_history
 $ exit
 
 # Verify Root Login is Disabled
