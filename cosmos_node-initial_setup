@@ -24,11 +24,11 @@ $ sudo tar -C /usr/local -xzf go1.17.5.linux-amd64.tar.gz
 
 # Setup go in .profile
 $ cat <<EOF >> ~/.profile
->export GOROOT=/usr/local/go
->export GOPATH=$HOME/go
->export GO111MODULE=on
->export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
->EOF
+ > export GOROOT=/usr/local/go
+ > export GOPATH=$HOME/go
+ > export GO111MODULE=on
+ > export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+ > EOF
 
 # Reset shell session
 source ~/.profile
@@ -71,6 +71,7 @@ $ ufw status
 # Exit and test ssh as user with new port (if not, try root. if not, try virtual terminal via provider to fix)
 # Or open a second terminal and test the login, and if it doesn't work you are still logged in the first terminal to make fixes instead
 $ exit
+$ exit
 $ ssh -p xxxx user@ipaddress
 
 # Test root
@@ -89,7 +90,6 @@ $ systemctl status ufw
 $ cat /etc/ssh/sshd_config
 $ go version
 $ which go
-$ which rustup
 
 # Exit Root & User
 $ history -c
