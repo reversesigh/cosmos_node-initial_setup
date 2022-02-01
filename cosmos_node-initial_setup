@@ -1,4 +1,4 @@
-# Written form the perspective of using Ubuntu with a provider, but most of this will apply if you are running a physical machine as well.
+# Written form the perspective of using Ubuntu with a dedicated server, but most of this will apply if you are running a physical machine as well.
 $ ssh root@ipaddress
 
 # Update & Upgrade Repos
