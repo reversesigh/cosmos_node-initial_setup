@@ -18,7 +18,7 @@ $ su - nodename
 # Install Standard Dependencies
 $ sudo apt install make build-essential gcc git jq chrony -y
 
-# Install go
+# Install go, check https://go.dev/dl for latest version before running
 $ wget https://golang.org/dl/go1.17.5.linux-amd64.tar.gz
 $ sudo tar -C /usr/local -xzf go1.17.5.linux-amd64.tar.gz
 
@@ -66,7 +66,7 @@ $ sudo systemctl status ufw
 
 # Double Check SSH Port is xxxx in sshd_config & UFW Port xxxx is open
 $ cat /etc/ssh/sshd_config
-$ ufw status
+$ sudo ufw status
 
 # Exit and test ssh as user with new port (if not, try root. if not, try virtual terminal via provider to fix)
 # Or open a second terminal and test the login, and if it doesn't work you are still logged in the first terminal to make fixes instead
