@@ -58,12 +58,6 @@ $ sudo ufw enable
 # Confirm with UFW that port xxxx is open for ssh
 $ sudo ufw status
 
-# Setup UFW Service at Boot
-$ sudo systemctl enable ufw
-
-# Confirm UFW Service is active
-$ sudo systemctl status ufw
-
 # Double Check SSH Port is xxxx in sshd_config & UFW Port xxxx is open
 $ cat /etc/ssh/sshd_config
 $ sudo ufw status
@@ -83,13 +77,6 @@ $ sudo nano /etc/ssh/sshd_config
 # Change PermitRootLogin from "Yes" to "No", confirm it is uncommented
 # CTRL+X and Save
 $ sudo systemctl restart sshd
-
-# Double check
-$ sudo ufw status
-$ sudo systemctl status ufw
-$ cat /etc/ssh/sshd_config
-$ go version
-$ which go
 
 # Exit Root & User
 $ exit
