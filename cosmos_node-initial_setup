@@ -62,13 +62,10 @@ $ sudo ufw status
 $ cat /etc/ssh/sshd_config
 $ sudo ufw status
 
-# Exit and test ssh as user with new port (if not, try root. if not, try virtual terminal via provider to fix)
-# Or open a second terminal and test the login, and if it doesn't work you are still logged in the first terminal to make fixes instead
-$ exit
-$ exit
+# Open as second terminal session and try to login using your user's creditinals.
 $ ssh -p xxxx user@ipaddress
 
-# Test root
+# Test sudo and root access
 $ sudo -i
 $ exit
 
