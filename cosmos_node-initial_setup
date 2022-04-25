@@ -54,6 +54,8 @@ $ sudo ufw allow 9090
 $ sudo ufw allow from youripaddress to any port 26657
 
 $ sudo ufw enable
+$ sudo systemctl enable ufw
+$ sudo systemctl start ufw
 
 # Confirm with UFW that port xxxx is open for ssh
 $ sudo ufw status
