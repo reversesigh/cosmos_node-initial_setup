@@ -24,10 +24,10 @@ sudo tar -C /usr/local -xzf go1.18.1.linux-amd64.tar.gz
 
 # Setup go in .profile
 cat <<EOF >> ~/.profile
- export GOROOT=/usr/local/go
- export GOPATH=$HOME/go
- export GO111MODULE=on
- export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+ export GOROOT=/usr/local/go  
+ export GOPATH=$HOME/go  
+ export GO111MODULE=on  
+ export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin  
  EOF
 
 # Reset shell session
