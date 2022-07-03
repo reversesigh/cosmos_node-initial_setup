@@ -86,9 +86,9 @@ ssh -p xxxx root@ipaddress
 
 # After this, node is ready for setup. Each node should have an up to date guide on their GitHub or Docs pages to get started.
 
-Some examples
-BitCanna https://docs.bitcanna.io/guides/validator-setup-guide
-Chihuahua https://github.com/ChihuahuaChain/mainnet
-Cosmos https://github.com/cosmos/gaia/blob/main/docs/hub-tutorials/join-mainnet.md
-Osmosis https://github.com/osmosis-labs/osmosis
+Some examples  
+BitCanna https://docs.bitcanna.io/guides/validator-setup-guide  
+Chihuahua https://github.com/ChihuahuaChain/mainnet  
+Cosmos https://github.com/cosmos/gaia/blob/main/docs/hub-tutorials/join-mainnet.md  
+Osmosis https://github.com/osmosis-labs/osmosis  
 Secret https://github.com/scrtlabs/SecretNetwork/blob/master/docs/validators-and-full-nodes/run-full-node-mainnet.md
