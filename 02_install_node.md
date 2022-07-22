@@ -1,6 +1,8 @@
 ## Node Intallation  
 One of the benefits of using Cosmos nodes is that the vast majority of them run and install exactly the same (there are exceptions that will not be compatible with this guide, such as `Secret Network` or `Orai`). There are various ways users and admins can handle an installation. This guide assumes you find it easier to clone the repository and install manually. Other options include using Cosmovisor and other tools which are covered in other guides on the web.  
   
+Whenever you see `gaia` or `gaiad` used make sure to replace with whatever node you are installing.  
+  
 ## Clone the Repo and Checkout Correct Version  
 For this guide we will be using `gaiad` as the example. This is assuming you have already setup your node initially following readme.md. For the majority of the time these same commands will work by simply replacing values such as URLs and names when installing other nodes.  
   
