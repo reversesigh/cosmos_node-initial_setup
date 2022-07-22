@@ -41,7 +41,7 @@ Once Go is downloaded and extracted to `/usr/local/` you can add this to any use
 ## Reset shell session
 `source ~/.profile`
 
-## Look for go
+## Look for go to confirm its installation
 `go version`  
 `which go`
 
