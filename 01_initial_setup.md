@@ -76,7 +76,7 @@ Open RPC to your specific local machine's IP address to connect and interact wit
 ## Confirm with UFW that port xxxx is open for ssh
 `sudo ufw status`
 
-## Open as second terminal session and try to login using your user's creditinals.
+## Open a second terminal session and try to login using your user's creditinals.
 `ssh -p xxxx user@ipaddress`
 
 ## Test sudo and root access
