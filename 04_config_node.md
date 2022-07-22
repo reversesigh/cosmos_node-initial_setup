@@ -7,7 +7,7 @@ Direct yourself to your node's configuation folder.
   
 `cd ~/.gaiad/config/`  
   
-Set your preferred pruning settings. Here is an example (update values to your preference and space needs):  
+Set your preferred pruning settings. Here is an example (update values to your preference and space needs) If you are running an archive node then you can ignore this:  
 `pruning="custom" && \`  
 `pruning_keep_recent=107 && \`  
 `pruning_keep_every=0 && \`  
