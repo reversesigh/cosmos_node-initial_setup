@@ -7,18 +7,20 @@ Written form the perspective of using Ubuntu with a dedicated server or VPS, but
 ## Update & Upgrade Repos
 `apt update && apt upgrade -y`
 
-## Add Users
+## Add Users  
+Replace `gaia` with an alternate name if installing a different node.
+  
 `adduser username`  
-`adduser nodename`  
+`adduser gaia`  
 
 ## Give User Sudo
 Create at least two user accounts: one for yourself and one for installing your node  
   
 `usermod username -aG sudo`  
-`usermod nodename -aG sudo`
+`usermod gaia -aG sudo`
 
 ## Switch to Node user
-`su - nodename`
+`su - gaia`
 
 ## Install Standard Dependencies
 `sudo apt install make build-essential gcc git jq chrony -y`
@@ -52,7 +54,7 @@ Once Go is downloaded and extracted to `/usr/local/` you can add this to any use
   
 Uncomment 'Port 22' and change '22' to 'xxxx' (xxxx = custom port #)  
   
-Add `ActiveUsers username1 username2` to restrict ssh login to defined users only. This will prevent ssh logins using your node user account.
+Add `ActiveUsers username1 username2` to restrict ssh login to defined users only. This will prevent ssh logins using your `gaia` or node user account.
   
 Press CTRL+X and save your file  
   
@@ -95,4 +97,7 @@ Open RPC to your specific local machine's IP address to connect and interact wit
 `exit`
 
 ## Verify Root Login is Disabled
-`ssh -p xxxx root@ipaddress`
+`ssh -p xxxx root@ipaddress`  
+
+## Verify Node User Login is Disabled  
+`ssh -p xxxx gaia@ipaddress`  
