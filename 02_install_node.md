@@ -30,7 +30,7 @@ Sometimes you'll be required to replace the current `genesis.json` file (localed
 You are now ready to configure your node in `app.toml` and `config.toml`, which should be located in `/home/gaia/.gaia/config`.
   
 ## A note on upgrades  
-Later on when you need to run a chain upgrade, you can simply return to this folder and run:  
+Later on when you need to run a chain upgrade, you can simply return to your cloned repo and run:  
   
 `git fetch --tags`  
   
