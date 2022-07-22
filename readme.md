@@ -8,7 +8,7 @@ Written form the perspective of using Ubuntu with a dedicated server, but most o
 `apt update && apt upgrade -y`
 
 ## Add Users
-`adduser username`
+`adduser username` 
 `adduser nodename`  
 
 ## Give User Sudo
@@ -22,15 +22,15 @@ Written form the perspective of using Ubuntu with a dedicated server, but most o
 `sudo apt install make build-essential gcc git jq chrony -y`
 
 ## Install go, check https://go.dev/dl for latest version before running
-`wget https://golang.org/dl/go1.18.4.linux-amd64.tar.gz`
+`wget https://golang.org/dl/go1.18.4.linux-amd64.tar.gz` 
 `sudo tar -C /usr/local -xzf go1.18.4.linux-amd64.tar.gz`
 
 ## Setup go in .profile
-`cat <<EOF >> ~/.profile`
-`GOROOT=/usr/local/go`
-`GOPATH=$HOME/go`
-`GO111MODULE=on`
-`PATH=$PATH:/usr/local/go/bin:$HOME/go/bin`
+`cat <<EOF >> ~/.profile` 
+`GOROOT=/usr/local/go` 
+`GOPATH=$HOME/go` 
+`GO111MODULE=on` 
+`PATH=$PATH:/usr/local/go/bin:$HOME/go/bin` 
 `EOF`
 
 ## Reset shell session
