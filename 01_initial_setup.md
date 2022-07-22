@@ -23,7 +23,9 @@ Create at least two user accounts: one for yourself and one for installing your 
 ## Install Standard Dependencies
 `sudo apt install make build-essential gcc git jq chrony -y`
 
-## Install go, check https://go.dev/dl for latest version before running
+## Install Go  
+Check https://go.dev/dl for latest version before running  
+  
 `wget https://golang.org/dl/go1.18.4.linux-amd64.tar.gz`  
 `sudo tar -C /usr/local -xzf go1.18.4.linux-amd64.tar.gz`
 
