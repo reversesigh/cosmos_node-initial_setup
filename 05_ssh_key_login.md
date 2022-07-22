@@ -22,7 +22,7 @@ CTRL+X and save your file. Run the following command:
   
 `ssh-copy-id -i .ssh/keyname gaianode`  
 
-You'll be prompted for your server password. The public key should upload to your server. You'll now simply type the following to login to your srerver:  
+You'll be prompted for your server password. The public key should upload to your server. You'll now simply type the following to login to your server without the need of typing a password:  
   
 `ssh gaianode`  
 
