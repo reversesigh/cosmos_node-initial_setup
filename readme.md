@@ -5,3 +5,4 @@ I wrote this guide mostly to fufill my own needs of having one. I may not necess
 [Install Node](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/02_install_node.md)  
 [Create Service](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/03_create_service_file.md)  
 [Configuration](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/04_config_node.md)  
+[SSH Key](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/05_ssh_key_login.md)  
