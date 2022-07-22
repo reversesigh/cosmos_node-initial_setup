@@ -52,7 +52,8 @@ Uncomment 'Port 22' and change '22' to 'xxxx' (xxxx = custom port #)
   
 Add `ActiveUsers username1 username2` to restrict ssh login to defined users only. This will prevent ssh logins using your node user account.
   
-CTRL+X and save your file  
+Press CTRL+X and save your file  
+  
 `sudo systemctl restart sshd`
 
 ## UFW Rules (these are default ports, please set rules according to your setup)
