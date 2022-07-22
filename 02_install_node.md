@@ -18,7 +18,7 @@ Later on when you need to run a chain upgrade, you can simply return to this fol
 New tags will post, verify version tag with official announcements and then run:  
   
 `git checkout vx.x.x`  
-`sudo systemctl stop gaiad` (for safety, you may wish to backup your chain data folder at `~/.gaia/data/`  
+`sudo systemctl stop gaiad` (for safety, you may wish to backup your chain data folder at `~/.gaia/data/`)  
 `make install`  
 `sudo systemctl restart gaiad && sudo journalctl -u gaiad -f --output cat`  
   
