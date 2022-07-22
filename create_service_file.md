@@ -6,7 +6,7 @@ Change `noded` to your binary name such as `gaiad`
 `sudo touch /etc/systemd/system/noded.service`  
 `sudo nano /etc/systemd/system/noded.service`  
   
- Copy and paste the example.service file from this repo. Fill in as needed. An example:  
+ Copy and paste the example.service file from this repo. Double the check to location of your node binary on the `ExecStart` line. Fill in as needed. An example:  
    
  `Description=Gaia daemon`  
 `After=network-online.target`  
