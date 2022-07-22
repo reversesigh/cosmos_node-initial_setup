@@ -12,7 +12,7 @@ Set your preferred pruning settings. Here is an example:
 `sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" app.toml && \`  
 `sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" app.toml`  
   
-If you are using custom ports, please remember to edit LCD and gRPC as needed.  
+If you are using custom ports, please remember to edit LCD and gRPC as needed. Also be mindful of minimum gas fees, especially if you are a valiadtor. Refer to official docs for more information.    
   
 `nano ~/.gaia/config/app.toml`  
 
