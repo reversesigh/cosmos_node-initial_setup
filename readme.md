@@ -8,7 +8,7 @@ Written form the perspective of using Ubuntu with a dedicated server, but most o
 `apt update && apt upgrade -y`
 
 ## Add Users
-`adduser username` 
+`adduser username`  
 `adduser nodename`  
 
 ## Give User Sudo
