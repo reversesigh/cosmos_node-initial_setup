@@ -34,3 +34,6 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/us
 
 # PATH for Node
 PATH=$PATH:/home/nodeusername/go/bin/
+
+# Local Bin
+PATH=$PATH:/usr/local/bin/
