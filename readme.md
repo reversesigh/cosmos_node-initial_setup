@@ -4,7 +4,7 @@ Written form the perspective of using Ubuntu with a dedicated server, but most o
 ## LOGIN
 ssh root@ipaddress
 
-# Update & Upgrade Repos
+## Update & Upgrade Repos
 apt update && apt upgrade -y
 
 ## Add Users
