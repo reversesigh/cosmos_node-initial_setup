@@ -1,3 +1,6 @@
+Whenever you see `gaia` or `gaiad` used make sure to replace with whatever node you are installing.
+
+
 ## app.toml
 
 Direct yourself to your node's configuation folder.  
