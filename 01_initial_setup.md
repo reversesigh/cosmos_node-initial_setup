@@ -1,6 +1,8 @@
 # Inital Setup Guide for Cosmos Nodes
-Written form the perspective of using Ubuntu with a dedicated server or VPS, but most of this will apply if you are running a bare metal machine as well. If running on RHEL/CentOS, Arch, or FreeBSD you'll likely need to search for comaptible packages in both official and community repos. Some commands may be slightly different as well.
+Written form the perspective of using Ubuntu with a dedicated server or VPS, but most of this will apply if you are running a bare metal machine as well. If running on RHEL/CentOS, Arch, or FreeBSD you'll likely need to search for comaptible packages in both official and community repos. Some commands may be slightly different as well.  
 
+Whenever you see `gaia` used make sure to replace with whatever node you are installing.  
+  
 ## LOGIN
 `ssh root@ipaddress`
 
