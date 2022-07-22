@@ -1,0 +1,13 @@
+[Unit]
+Description=
+After=network-online.target
+
+[Service]
+User=
+ExecStart=
+Restart=on-failure
+RestartSec=3
+LimitNOFILE=65535
+
+[Install]
+WantedBy=multi-user.target
