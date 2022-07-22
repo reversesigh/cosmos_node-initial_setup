@@ -1,18 +1,21 @@
-# Written form the perspective of using Ubuntu with a dedicated server, but most of this will apply if you are running a physical machine as well.
+# Iniital Setup Guide for Cosmos Nodes
+Written form the perspective of using Ubuntu with a dedicated server, but most of this will apply if you are running a physical machine as well.
+
+## LOGIN
 ssh root@ipaddress
 
 # Update & Upgrade Repos
 apt update && apt upgrade -y
 
-# Add Users
+## Add Users
 adduser username  
 adduser nodename  
 
-# Give User Sudo
+## Give User Sudo
 usermod username -aG sudo  
 usermod nodename -aG sudo
 
-# Switch to Node user
+## Switch to Node user
 su - nodename
 
 # Install Standard Dependencies
