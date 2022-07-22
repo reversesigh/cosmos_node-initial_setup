@@ -48,9 +48,7 @@ Once Go is downloaded and extracted to `/usr/local/` you can add this to any use
 ## SSH Configuration
 `sudo nano /etc/ssh/sshd_config`
 
-## Uncomment 'Port 22' and change '22' to 'xxxx' (xxxx = custom port #)
-
-Uncomment `Port 22` and change `22` to `xxxx` (xxx = custom port)  
+## Uncomment 'Port 22' and change '22' to 'xxxx' (xxxx = custom port #)  
 Add `ActiveUsers username1 username2` to restrict ssh login to defined users only. This will prevent ssh logins using your node user account.
   
 CTRL+X and save your file  
