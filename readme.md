@@ -13,6 +13,7 @@ Written form the perspective of using Ubuntu with a dedicated server or VPS, but
 
 ## Give User Sudo
 Create at least two user accounts: one for yourself and one for installing your node  
+  
 `usermod username -aG sudo`  
 `usermod nodename -aG sudo`
 
@@ -49,7 +50,7 @@ Create at least two user accounts: one for yourself and one for installing your 
 
 Uncomment `Port 22` and change `22` to `xxxx` (xxx = custom port)  
 Add `ActiveUsers username1 username2` to restrict ssh login to defined users only. This will prevent ssh logins using your node user account.
-
+  
 CTRL+X and save your file  
 `sudo systemctl restart sshd`
 
@@ -77,7 +78,9 @@ Open RPC to your specific local machine's IP address to connect and interact wit
 
 ## Restrict Root Login
 `sudo nano /etc/ssh/sshd_config`  
+  
  Change 'PermitRootLogin' from "Yes" to "No" and confirm it is uncommented.  
+   
 `CTRL+X and Save`  
 `sudo systemctl restart sshd`
 
