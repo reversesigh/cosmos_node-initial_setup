@@ -26,7 +26,7 @@ Create the file within CLI
   
 `cat <<EOF >> /etc/systemd/system/{daemon}.service`  
 `[Unit]`  
-`Description=Gaia daemon`
+`Description=Gaia daemon`  
 `After=network-online.target`  
   
 `[Service]`  
