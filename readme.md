@@ -60,7 +60,7 @@ CTRL+X and save your file
 `sudo ufw allow 26656`  
 `sudo ufw allow 9090`
 
-## Open RPC (default: 26657) to your specific machine's IP address to connect to your node to use cli client from local machine
+## Open RPC (default: 26657) to your specific machine's IP address to connect and interact with your node remoately from a local machine
 `sudo ufw allow from youripaddress to any port 26657`  
 `sudo ufw enable`
 
