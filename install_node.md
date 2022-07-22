@@ -18,6 +18,8 @@ The binary will typically be installed in `/home/gaia/go/bin` (based on your env
 `gaiad version`  
 
 ## Init your Node  
+Confirm the current chain-id before running.  
+  
 `gaiad init moniker --chain-id cosmoshub-4`  
 
 ## Download Genesis  
