@@ -4,7 +4,7 @@ On your local machine, run the following (for Windows or Mac users, please refer
   
 `ssh-keygen -f ~/.ssh/keyname -t rsa -b 4096`  
 
-Your options for `-t` include `rsa` `dsa` `ecdsa` or `ed25519`. Refer to `ssh-keygen` guides online for more information.  
+Your options for `-t` include `rsa` `dsa` `ecdsa` or `ed25519`. Refer to `ssh-keygen` guides online for more information on type and size.  
 
 ## Create .ssh/config Entry  
   
