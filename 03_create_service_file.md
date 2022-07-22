@@ -1,8 +1,8 @@
 # There are two ways I find easiest to create service files.  
 
 ## Method One  
-Change `gaiad` to the name of the node you are installing.  
-  
+Whenever you see `gaia` used make sure to replace with whatever node you are installing.
+    
 `sudo touch /etc/systemd/system/gaiad.service`  
 `sudo nano /etc/systemd/system/gaiad.service`  
   
