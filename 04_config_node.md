@@ -29,7 +29,7 @@ Direct yourself to your node's configuation folder.
 
 This is the main configuration file for your node. If you are using default ports there is not much that needs changed here. If you are using custom ports, be sure to edit them here and verify UFW settings before launching your node.
 
-If you wish to access your node remotely from a local machine, you'll also need to expose the node's RPC by changing it's IP address to `0.0.0.0`
+If you wish to access your node remotely from a local machine, you'll also need to expose the node's RPC by changing the IP address to `0.0.0.0` in the RPC section  
 
 You'll also need to add peers before you start syncing. Most blockchains will have a network repository featuring peer lists, genesis files, etc., Another great option is to use Polkachu if they have the chain resources available on their website. You can find resources for state sync, snapshot sync, peers, etc.,
   
