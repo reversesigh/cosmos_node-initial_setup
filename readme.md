@@ -12,7 +12,7 @@ Written form the perspective of using Ubuntu with a dedicated server, but most o
 `adduser nodename`  
 
 ## Give User Sudo
-`usermod username -aG sudo` 
+`usermod username -aG sudo`  
 `usermod nodename -aG sudo`
 
 ## Switch to Node user
