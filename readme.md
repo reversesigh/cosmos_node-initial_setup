@@ -27,6 +27,7 @@ Written form the perspective of using Ubuntu with a dedicated server, but most o
 
 ## Setup go in .profile
 `cat <<EOF >> ~/.profile`  
+`#GoLang`  
 `GOROOT=/usr/local/go`  
 `GOPATH=$HOME/go`  
 `GO111MODULE=on`  
