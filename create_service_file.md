@@ -31,7 +31,7 @@ Create the file within CLI
   
 `[Service]`  
 `User=root`  
-`ExecStart=/root/go/bin/gaiad start`  
+`ExecStart=/home/gaia/go/bin/gaiad start`  
 `Restart=on-failure`  
 `RestartSec=3`  
 `LimitNOFILE=4096`  
