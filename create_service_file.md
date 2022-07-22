@@ -8,18 +8,18 @@ Changed `noded` to your binary name such as `gaiad`
   
  Copy and paste the example.service file from this repo. Fill in as needed. An example:  
    
- `Description=Gaia daemon
-After=network-online.target
+ `Description=Gaia daemon`  
+`After=network-online.target`  
 
-[Service]
-User=gaia
-ExecStart=/home/gaia/go/bin/gaiad start
-Restart=on-failure
-RestartSec=3
-LimitNOFILE=4096
-
-[Install]
-WantedBy=multi-user.target`  
+`[Service]`  
+`User=gaia`  
+`ExecStart=/home/gaia/go/bin/gaiad start`  
+`Restart=on-failure`  
+`RestartSec=3`  
+`LimitNOFILE=4096`  
+  
+`[Install]`  
+`WantedBy=multi-user.target`  
   
 ## Method Two
 Create the file within CLI  
