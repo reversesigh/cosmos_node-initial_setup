@@ -45,9 +45,3 @@ Create the file within CLI
    
  `sudo systemctl enable gaiad`  
  `sudo systemctl daemon-reload`  
-   
- You can then start your service if your node is initialized and properly configured.  
- `sudo systemctl start gaiad`  
-   
- Check the status by running the following  
- `sudo journalctl -u gaiad -f --output cat`  
