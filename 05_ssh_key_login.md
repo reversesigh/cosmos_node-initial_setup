@@ -26,4 +26,4 @@ You'll be prompted for your server password. The public key should upload to you
   
 `ssh gaianode`  
 
-Obviously make sure to edit `gaianode` to match your own needs/settings.
+Make sure to edit `gaianode` to match your own needs/settings.
