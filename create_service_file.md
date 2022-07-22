@@ -3,8 +3,8 @@
 ## Method One  
 Change `gaiad` to the name of the node you are installing.  
   
-`sudo touch /etc/systemd/system/noded.service`  
-`sudo nano /etc/systemd/system/noded.service`  
+`sudo touch /etc/systemd/system/gaiad.service`  
+`sudo nano /etc/systemd/system/gaiad.service`  
   
  Copy and paste the example.service file from this repo. Double the check to location of your node binary on the `ExecStart` line. Fill in as needed. An example:  
    
