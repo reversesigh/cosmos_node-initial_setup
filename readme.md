@@ -45,7 +45,7 @@ Written form the perspective of using Ubuntu with a dedicated server, but most o
 
 ## Uncomment 'Port 22' and change '22' to 'xxxx' (xxxx = custom port #)
 
-Uncomment `Port 22` and change `22` to `xxxx` (xxx = custom port)
+Uncomment `Port 22` and change `22` to `xxxx` (xxx = custom port)  
 Add `ActiveUsers username1 username2` to restrict ssh login to defined users only
 
 CTRL+X and save your file  
