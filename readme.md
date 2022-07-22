@@ -40,7 +40,7 @@ Written form the perspective of using Ubuntu with a dedicated server, but most o
 `go version`  
 `which go`
 
-## SSH Port
+## SSH Configuration
 `sudo nano /etc/ssh/sshd_config`
 
 ## Uncomment 'Port 22' and change '22' to 'xxxx' (xxxx = custom port #)
