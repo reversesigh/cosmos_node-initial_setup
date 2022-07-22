@@ -22,7 +22,10 @@ Add the following:
  `User username`  
  `IdentityFile ~/.ssh/keyname`  
    
-CTRL+X and save your file. Run the following command:  
+CTRL+X and save your file.  
+  
+## Upload Key to Server
+Run the following command:  
   
 `ssh-copy-id -i .ssh/keyname gaianode`  
 
