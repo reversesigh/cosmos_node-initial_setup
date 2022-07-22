@@ -53,10 +53,10 @@ CTRL+X and save your file
 
 ## UFW Rules (these are default ports, please set rules according to your setup)
 `sudo ufw default allow outgoing`  
-sudo ufw default deny incoming`  
-sudo ufw allow xxxx`  
-sudo ufw allow 26656`  
-sudo ufw allow 9090`
+`sudo ufw default deny incoming`  
+`sudo ufw allow xxxx`  
+`sudo ufw allow 26656`  
+`sudo ufw allow 9090`
 
 ## Open RPC (default: 26657) to your specific machine's IP address to connect to your node to use cli client from local machine
 `sudo ufw allow from youripaddress to any port 26657`  
