@@ -27,7 +27,9 @@ Create at least two user accounts: one for yourself and one for installing your 
 `wget https://golang.org/dl/go1.18.4.linux-amd64.tar.gz`  
 `sudo tar -C /usr/local -xzf go1.18.4.linux-amd64.tar.gz`
 
-## Setup go in .profile
+## Setup go in .profile  
+Once Go is downloaded and extracted to `/usr/local/` you can add this to any user's `.profile`  
+  
 `cat <<EOF >> ~/.profile`  
 `# Go`  
 `GOROOT=/usr/local/go`  
