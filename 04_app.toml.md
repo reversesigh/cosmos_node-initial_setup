@@ -4,7 +4,7 @@ Direct yourself to your node's configuation folder.
   
 Set your preferred pruning settings. Here is an example:  
 `pruning="custom" && \`  
-`pruning_keep_recent=107 && \`
+`pruning_keep_recent=107 && \`  
 `pruning_keep_every=0 && \`  
 `pruning_interval=73 && \`  
 `sed -i -e "s/^pruning *=.*/pruning = \"$pruning\"/" app.toml && \`  
