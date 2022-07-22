@@ -38,6 +38,7 @@ If you wish to access your node remotely from a local machine, you'll also need 
 
 You'll also need to add peers before you start syncing. Most blockchains will have a network repository featuring peer lists, genesis files, etc., Another great option is to use Polkachu if they have the chain resources available on their website. You can find resources for state sync, snapshot sync, peers, etc.,
   
+An example of what Polkachu offers:  
 [Polkachu - Cosmos Hub Resources](https://polkachu.com/networks/cosmos)  
 
 Once your configuration is complete, you should be able to start your service and monitor the log live.  
