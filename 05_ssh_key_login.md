@@ -1,3 +1,5 @@
+## Benefits Of Using SSH Keys  
+  
 Instead of typing out `ssh -p xxxx username@ipaddress` to login to your node's server, you can create an ssh key and configure your local machine to access with a simple command such as `ssh gaianode`.  
   
 On your local machine, run the following (for Windows or Mac users, please refer to other guides):  
