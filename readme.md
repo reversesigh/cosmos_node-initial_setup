@@ -75,8 +75,7 @@ CTRL+X and save your file
 
 ## Restrict Root Login
 `sudo nano /etc/ssh/sshd_config`
- 
-## Change 'PermitRootLogin' from "Yes" to "No" and confirm it is uncommented then: 
+ Change 'PermitRootLogin' from "Yes" to "No" and confirm it is uncommented.  
 `CTRL+X and Save`  
 `sudo systemctl restart sshd`
 
