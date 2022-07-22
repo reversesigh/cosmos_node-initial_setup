@@ -23,6 +23,8 @@ Please remember to edit LCD and gRPC as needed (edit ports, enable/disable RPC o
 
 CTRL+X and save any changes you made.
   
+If you ever find your chain data is taking up too much space, consider using tools such as [cosmprund](https://github.com/binaryholdings/cosmprund).  
+  
 ## config.toml  
 
 Direct yourself to your node's configuation folder.  
