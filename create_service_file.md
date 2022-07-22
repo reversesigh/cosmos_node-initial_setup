@@ -1,7 +1,7 @@
 # There are two ways I find easiest to create service files.  
 
 ## Method One  
-Changed `noded` to your binary name such as `gaiad`  
+Change `noded` to your binary name such as `gaiad`  
   
 `sudo touch /etc/systemd/system/noded.service`  
 `sudo nano /etc/systemd/system/noded.service`  
