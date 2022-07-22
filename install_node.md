@@ -19,5 +19,8 @@ The binary will typically be installed in `/home/gaia/go/bin` (based on your env
 
 ## Init your Node  
 `gaiad init moniker --chain-id cosmoshub-4`  
+
+## Download Genesis  
+Sometimes you'll be required to replace the current `genesis.json` file (localed in `/home/gaia/.gaiad/config/` with a newer one. Refer to chain docs or the chain's network repository.  
   
 You are now ready to configure your node in `app.toml` and `config.toml`, which should be located in `/home/gaia/.gaia/config`.
