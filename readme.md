@@ -12,7 +12,7 @@ Written form the perspective of using Ubuntu with a dedicated server or VPS, but
 `adduser nodename`  
 
 ## Give User Sudo
-Create at least two user accounts: one for yourself and one for installing your node
+Create at least two user accounts: one for yourself and one for installing your node  
 `usermod username -aG sudo`  
 `usermod nodename -aG sudo`
 
