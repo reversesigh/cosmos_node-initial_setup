@@ -26,7 +26,7 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-#GoLang
+# GoLang
 GOROOT=/usr/local/go
 GOPATH=/home/rbatty/go
 GO111MODULE=on
