@@ -2,39 +2,39 @@
 Written form the perspective of using Ubuntu with a dedicated server, but most of this will apply if you are running a physical machine as well.
 
 ## LOGIN
-ssh root@ipaddress
+`ssh root@ipaddress`
 
 ## Update & Upgrade Repos
-apt update && apt upgrade -y
+`apt update && apt upgrade -y`
 
 ## Add Users
-adduser username  
-adduser nodename  
+`adduser username`
+`adduser nodename`  
 
 ## Give User Sudo
-usermod username -aG sudo  
-usermod nodename -aG sudo
+`usermod username -aG sudo` 
+`usermod nodename -aG sudo`
 
 ## Switch to Node user
-su - nodename
+`su - nodename`
 
 ## Install Standard Dependencies
-sudo apt install make build-essential gcc git jq chrony -y
+`sudo apt install make build-essential gcc git jq chrony -y`
 
 ## Install go, check https://go.dev/dl for latest version before running
-wget https://golang.org/dl/go1.18.4.linux-amd64.tar.gz  
-sudo tar -C /usr/local -xzf go1.18.4.linux-amd64.tar.gz
+`wget https://golang.org/dl/go1.18.4.linux-amd64.tar.gz`
+`sudo tar -C /usr/local -xzf go1.18.4.linux-amd64.tar.gz`
 
 ## Setup go in .profile
-cat <<EOF >> ~/.profile
-GOROOT=/usr/local/go  
-GOPATH=$HOME/go  
-GO111MODULE=on  
-PATH=$PATH:/usr/local/go/bin:$HOME/go/bin  
-EOF
+`cat <<EOF >> ~/.profile`
+`GOROOT=/usr/local/go`
+`GOPATH=$HOME/go`
+`GO111MODULE=on`
+`PATH=$PATH:/usr/local/go/bin:$HOME/go/bin`
+`EOF`
 
 ## Reset shell session
-source ~/.profile
+`source ~/.profile`
 
 ## Look for go
 go version  
