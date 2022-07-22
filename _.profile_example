@@ -32,8 +32,8 @@ GOPATH=/home/rbatty/go
 GO111MODULE=on
 PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/rbatty/go/bin
 
-# PATH for Node
-PATH=$PATH:/home/nodeusername/go/bin/
+# PATH for gaiad
+PATH=$PATH:/home/gaia/go/bin/
 
 # Local Bin
 PATH=$PATH:/usr/local/bin/
