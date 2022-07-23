@@ -41,6 +41,8 @@ You'll also need to add peers before you start syncing. Most blockchains will ha
 An example of what Polkachu offers:  
 [Polkachu - Cosmos Hub Resources](https://polkachu.com/networks/cosmos)  
   
+After you are done editing `config.toml` be sure to press CTRL+X and save any changes you made.  
+  
 ## Start sync! :)  
   
 Once your configuration is complete and your state sync or snapshot sync is prepared, then you should be able to start your service and monitor the log live.    
