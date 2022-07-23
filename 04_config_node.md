@@ -46,3 +46,5 @@ When adding peers, make they are placed inbetween quotes, divided by commas with
 `persistent_peers = "cf10a45ead9e76d45b06dee97ef779e65103c78e@3.128.185.235:26656,91d50a7faf28fe301085f340a7d98a518e1243bd@44.236.220.165:26656"`
   
 After you are done editing `config.toml` be sure to press CTRL+X and save any changes you made.  
+
+You are now ready to [sync your node](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/05_sync.md) 
