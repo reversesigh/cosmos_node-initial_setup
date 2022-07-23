@@ -79,7 +79,7 @@ Open RPC to your specific local machine's IP address to connect and interact wit
 `sudo ufw allow from youripaddress to any port 26657`  
 `sudo ufw enable`
 
-## Confirm with UFW that port xxxx is open for ssh
+## Confirm with UFW that your custom ssh port is open
 `sudo ufw status`
 
 ## Open a second terminal session and try to login using your user's creditinals.
