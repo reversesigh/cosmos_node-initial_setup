@@ -49,3 +49,19 @@ On a local machine run `curl nodeip:26657/status` (change port if needed)
 Once you see `"catching_up": false` then you know you are fully synced. Congratulations.
   
 Now that youre node is fully synced and live, let's make an [SSH Key](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/06_ssh_key_login.md)  
+
+## A note on unsafe-reset-all  
+  
+You may notice that the command `unsafe-reset-all` in certain guides. Be *very* careful with this command, especially if you are a validator. There is a reason the word `unsafe` is used.  
+  
+Running this command will reset your chain data, `priv_validator_key.json` and `priv_validator_state.json`. If you are a validator, always make sure you have your `priv_validator_key.json` backed up safely.  
+  
+An example of when you might want to use this is when your chain data becomes corrupted. You can run this command before extracting your snapshot or starting state sync: 
+  
+`gaiad tendermint unsafe-reset-all --home /home/gaia/.gaia/`  
+  
+I like to define `--home` in this command in case I'm in the wrong folder. You may notice if you run this command without the `--home` flag that it will create a `config` and `data` folder in your current directory instead of your default home folder for `gaia`. 
+  
+Other chains may include `unsafe-reset-all` as a main subcommand rather than a subcommand of `tendermint`. An example using another chain:  
+  
+`comdex unsafe-reset-all --home /home/comdex/.comdex/`  
