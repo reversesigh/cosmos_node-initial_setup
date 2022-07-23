@@ -1,5 +1,5 @@
 ## Cosmos Node Initial Setup  
-I wrote this guide mostly to fufill my own needs of having one. I may not necessarily setup the same way others do, so please keep in mind this is just *one* method of setting up your node. If you wish to make your full node a validator, please refer to other official docs.  
+I wrote this living guide mostly to fufill my own needs of having one and for some friends who needed help. I may not necessarily setup the same way others do, so please keep in mind this is just *one* method of setting up your node. If you wish to make your full node a validator, please refer to other official docs.  
   
 [Initial Setup](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/01_initial_setup.md)    
 [Install Node](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/02_install_node.md)  
