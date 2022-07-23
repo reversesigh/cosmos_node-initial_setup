@@ -27,4 +27,4 @@ Confirm the current chain-id before running.
 ## Download Genesis  
 Sometimes you'll be required to replace the current `genesis.json` file (localed in `/home/gaia/.gaiad/config/` with a newer one. Refer to chain docs or the chain's network repository.  
   
-You are now ready to configure your node in `app.toml` and `config.toml`, which should be located in `/home/gaia/.gaia/config`.
+You are now ready to [create a service file](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/03_create_service_file.md)  
