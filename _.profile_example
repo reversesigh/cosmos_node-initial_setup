@@ -37,5 +37,5 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/us
 # PATH=$PATH:/home/gaia/go/bin/
 
 # Local Bin
-# Uncomment for users as needed for chains such as Secret Network.
+# Uncomment for users as needed for chains such as Secret Network, or other binaries you have placed in this folder.
 # PATH=$PATH:/usr/local/bin/
