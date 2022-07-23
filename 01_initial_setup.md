@@ -65,7 +65,7 @@ Press CTRL+X and save your file
 `sudo systemctl restart sshd`
 
 ## UFW Rules  
-These are default ports, please set rules according to your setup
+This is just an example using default ports, please set rules according to your setup and specific needs:  
   
 `sudo ufw default allow outgoing`  
 `sudo ufw default deny incoming`  
