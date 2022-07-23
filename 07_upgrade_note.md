@@ -1,6 +1,7 @@
 ## A note on upgrades  
-Later on when you need to run a chain upgrade, you can simply return to your cloned repo and run:  
+Later on when you need to run a chain upgrade, you can simply return to your cloned repo and run `make install` again after fetching and checking out the new binary version. Start by directing yourself to your github/gaia folder:  
   
+`cd gaia`
 `git fetch --tags`  
   
 New tags will post, verify version tag with official announcements and then run:  
