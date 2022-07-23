@@ -34,3 +34,5 @@ You'll be prompted for your server password. The public key should upload to you
 `ssh gaianode`  
 
 Make sure to edit `gaianode` to match your own needs/settings.
+
+Now that you are done, get yourself mentally ready for [upgrading your node in the future](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/06_upgrade_note.md)  
