@@ -22,7 +22,7 @@ This is my preferred method for syncing up a new node. Run a command similar to 
 
 `curl -s http://ipaddress:26657/commit | jq "{height: .result.signed_header.header.height, hash: .result.signed_header.commit.block_id.hash}"`
 
-You can then enabled state sync in `config.toml` and input the information for state sync.
+You can then enabled state sync in `config.toml` and input the information for state sync. Remember to include two entires for `rpc_servers`:  
   
 `# For Cosmos SDK-based chains, trust_period should usually be about 2/3 of the unbonding time (~2`   
 `# weeks) during which they can be financially punished (slashed) for misbehavior.`  
