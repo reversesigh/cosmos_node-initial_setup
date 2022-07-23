@@ -46,18 +46,3 @@ When adding peers, make they are placed inbetween quotes, divided by commas with
 `persistent_peers = "cf10a45ead9e76d45b06dee97ef779e65103c78e@3.128.185.235:26656,91d50a7faf28fe301085f340a7d98a518e1243bd@44.236.220.165:26656"`
   
 After you are done editing `config.toml` be sure to press CTRL+X and save any changes you made.  
-  
-## Start sync! :)  
-  
-Once your configuration is complete and your state sync or snapshot sync is prepared, then you should be able to start your service and monitor the log live.    
-
-`sudo systemctl start gaiad && sudo journalctl -u gaiad -f --output cat`  
-
-You can check the status of your sync by running the following command.
-
-On the server run `curl localhost:26657/status` (change port if needed)  
-On a local machine run `curl nodeip:26657/status` (change port if needed) 
-
-Once you see `"catching_up": false` then you know you are fully synced. Congratulations.
-  
-Now that youre node is fully synced and live, let's make an [SSH Key](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/05_ssh_key_login.md)  
