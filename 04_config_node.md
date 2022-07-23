@@ -7,7 +7,8 @@ Direct yourself to your node's configuation folder.
   
 `cd ~/.gaiad/config/`  
   
-Set your preferred pruning settings. Here is an example set of commands to run while located inside your `config` directory. Update values to your preference and space needs (the numbers below are for tight pruning). If you are running an archive node then you can ignore this:  
+Set your preferred pruning settings. Here is an example set of commands to run while located inside your `config` directory. Update values to your preference and space needs (the numbers below are for tight pruning). If you ever find your chain data is taking up too much space, consider using tools such as [cosmprund](https://github.com/binaryholdings/cosmprund).  If you are running an archive node then you can ignore this:  
+  
 `pruning="custom" && \`  
 `pruning_keep_recent=107 && \`  
 `pruning_keep_every=0 && \`  
@@ -17,13 +18,12 @@ Set your preferred pruning settings. Here is an example set of commands to run w
 `sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" app.toml && \`  
 `sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" app.toml`  
   
-Please remember to edit LCD and gRPC as needed (edit ports, enable/disable RPC or API, etc.,). Also be mindful of minimum gas fees, especially if you are a valiadtor. Refer to official docs for more information. To get started open the `app.toml` file.   
+It's time to edit `app.toml` directly. Please remember to edit LCD and gRPC as needed (edit ports, enable/disable RPC or API, etc.,). Also be mindful of minimum gas fees, especially if you are a valiadtor. Refer to official docs for more information. To get started open the `app.toml` file.   
   
 `nano ~/.gaia/config/app.toml`  
-
-CTRL+X and save any changes you made.
   
-If you ever find your chain data is taking up too much space, consider using tools such as [cosmprund](https://github.com/binaryholdings/cosmprund).  
+CTRL+X and save any changes you made.  
+  
   
 ## config.toml  
 
