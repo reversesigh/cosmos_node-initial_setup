@@ -43,7 +43,7 @@ Create the file within CLI
  # Enable the Service  
  Be sure to enable your service file so it starts when your server boots.  
    
- `sudo systemctl enable gaiad`  
  `sudo systemctl daemon-reload`  
+ `sudo systemctl enable gaiad`  
    
   You are now ready to [configure your node](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/04_config_node.md)  
