@@ -20,3 +20,6 @@ Eventually, you may wish to learn about alternative methods such as [Cosmovisor]
   
 ## Important  
 Sometimes chain upgrades will have specific instructions. *ALWAYS* refer to official announcements from chains for instructions.
+
+
+Congratulations on setting up a full node! Check out some [addtional resources](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/07_resources.md) to help continue your journey.
