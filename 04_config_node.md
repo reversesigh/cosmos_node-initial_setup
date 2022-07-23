@@ -53,3 +53,5 @@ On the server run `curl localhost:26657/status` (change port if needed)
 On a local machine run `curl nodeip:26657/status` (change port if needed) 
 
 Once you see `"catching_up": false` then you know you are fully synced. Congratulations.
+  
+Now that youre node is fully synced and live, let's make an [SSH Key](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/05_ssh_key_login.md)  
