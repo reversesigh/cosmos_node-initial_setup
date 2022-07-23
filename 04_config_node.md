@@ -40,8 +40,10 @@ You'll also need to add peers before you start syncing. Most blockchains will ha
   
 An example of what Polkachu offers:  
 [Polkachu - Cosmos Hub Resources](https://polkachu.com/networks/cosmos)  
-
-Once your configuration is complete, you should be able to start your service and monitor the log live.  
+  
+## Start sync! :)  
+  
+Once your configuration is complete and your state sync or snapshot sync is prepared, then you should be able to start your service and monitor the log live.    
 
 `sudo systemctl start gaiad && sudo journalctl -u gaiad -f --output cat`  
 
