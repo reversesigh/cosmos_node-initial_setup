@@ -20,7 +20,7 @@ This will extract the snapshot to your chain data folder. Once complete, you sho
   
 ## State Sync
 
-This is my preferred method for syncing up a new node. Run a command similar to this one one most chains to get a trusted hash and block height. Replace `Polkachu`'s RPC in the example with a public RPC address that fits your needs:  
+This is my preferred method for syncing up a new node. Run a command similar to this one one most chains to get a trusted hash and block height. Replace `Polkachu`'s RPC in the example with a public RPC address that fits your needs (for example if you are trying to state sync Comdex, you'll need to find a Comdex RPC instead):  
   
 `curl -s https://cosmos-rpc.polkachu.com:443/commit | jq "{height: .result.signed_header.header.height, hash: .result.signed_header.commit.block_id.hash}"`
 
