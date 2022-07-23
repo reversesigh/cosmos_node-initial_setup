@@ -17,7 +17,7 @@ New tags will post, verify version tag with official announcements and then run:
 `sudo systemctl restart gaiad && sudo journalctl -u gaiad -f --output cat`  
   
 ## Cosmovisor  
-Eventually, you may wish to learn about alternative methods such as [Cosmovisor](https://github.com/provenance-io/cosmovisor)  
+Eventually, you may wish to learn about alternative methods such as [Cosmovisor](https://github.com/provenance-io/cosmovisor)  , a Cosmos SDK binary manager.
   
 ## Important  
 Sometimes chain upgrades will have specific instructions. *ALWAYS* refer to official announcements from chains for instructions.
