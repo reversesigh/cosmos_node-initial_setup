@@ -8,7 +8,7 @@ There are different methods available for syncing your server.
 
 ## Snapshot Sync
 
-Assuming you've downloaded your compressed snapshot already, you can extract using a command similar to the following example.
+Assuming you've downloaded your compressed snapshot already, you can extract using a command similar to the following example. If you need to download a snapshot check with [Polkachu](https://polkachu.com/), [Stake2Me](https://snapshots.stake2.me/), [Quicksync](https://www.quicksync.io/), [Stakecraft](https://snapshots.stakecraft.com/), among many others.
 
 `lz4 -c -d snapshot.tar.lz4  | tar -x -C $HOME/.gaia`
 
