@@ -18,7 +18,7 @@ Set your preferred pruning settings. Here is an example set of commands to run w
 `sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" app.toml && \`  
 `sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" app.toml`  
   
-It's time to edit `app.toml` if you need to enable, disable, or edit ports for LCD and gRPC. Also be mindful of minimum gas fees, especially if you are a valiadtor. Refer to [official docs](https://github.com/cosmos/gaia/blob/main/docs/hub-tutorials/join-mainnet.md) for more information. To get started open the `app.toml` file.   
+It's time to edit `app.toml` if you need to enable, disable, or edit ports for API and gRPC. Also be mindful of minimum gas fees, especially if you are a valiadtor. Refer to [official docs](https://github.com/cosmos/gaia/blob/main/docs/hub-tutorials/join-mainnet.md) for more information. To get started open the `app.toml` file.   
   
 `nano ~/.gaia/config/app.toml`  
   
