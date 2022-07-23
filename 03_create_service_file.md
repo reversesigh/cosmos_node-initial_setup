@@ -45,3 +45,5 @@ Create the file within CLI
    
  `sudo systemctl enable gaiad`  
  `sudo systemctl daemon-reload`  
+   
+  You are now ready to [configure your node](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/04_config_node.md)  
