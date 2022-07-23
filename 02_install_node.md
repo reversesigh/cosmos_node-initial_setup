@@ -1,5 +1,5 @@
 ## Node Intallation  
-One of the benefits of using Cosmos nodes is that the vast majority of them run and install exactly the same (there are exceptions that will not be compatible with this guide, such as `Secret Network` `Odin Protocol` or `Orai`). There are various ways users and admins can handle an installation. This guide assumes you find it easier to clone the repository and install manually. Other options include using Cosmovisor and other tools which are covered in other guides on the web.  
+One of the benefits of using Cosmos nodes is that the vast majority of them run and install exactly the same (there are exceptions that will not be compatible with this guide, such as `Secret Network` `Odin Protocol` or `Orai`). There are various ways users and admins can handle an installation. This guide assumes you find it easier to clone the repository and install manually. Other options include using [Cosmovisor](https://github.com/provenance-io/cosmovisor) and other tools which are covered in other guides on the web.  
   
 Whenever you see `gaia` or `gaiad` used make sure to replace with whatever node you are installing.  
   
