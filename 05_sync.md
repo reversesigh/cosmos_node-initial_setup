@@ -26,11 +26,22 @@ This is my preferred method for syncing up a new node. Run a command similar to 
 
 You can then enabled state sync in `config.toml` and input the information for state sync. Remember to include two entires for `rpc_servers`:  
   
+Default setting:  
+  
 `# For Cosmos SDK-based chains, trust_period should usually be about 2/3 of the unbonding time (~2`   
 `# weeks) during which they can be financially punished (slashed) for misbehavior.`  
 `rpc_servers = ""`  
 `trust_height = 0`  
 `trust_hash = ""`  
+`trust_period = "168h0m0s"`  
+  
+Here is an example of what your edited configuration for state sync should look like: 
+  
+`# For Cosmos SDK-based chains, trust_period should usually be about 2/3 of the unbonding time (~2`   
+`# weeks) during which they can be financially punished (slashed) for misbehavior.`  
+`rpc_servers = "https://cosmos-rpc.polkachu.com:443,https://cosmos-rpc.polkachu.com:443"`  
+`trust_height = 11377513`  
+`trust_hash = "E95A010386958C240862CD934D6B46D8104EEDECCCF3249613E31B13E9E22CC1"`  
 `trust_period = "168h0m0s"`  
   
 You can also find working state sync settings via [Polkachu](https://polkachu.com/state_sync/cosmos) 
