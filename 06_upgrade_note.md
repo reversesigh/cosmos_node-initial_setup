@@ -16,7 +16,7 @@ New tags will post, verify version tag with official announcements and then run:
  Restart the service and watch the log  
 `sudo systemctl restart gaiad && sudo journalctl -u gaiad -f --output cat`  
   
-##Cosmovisor  
+## Cosmovisor  
 Eventually, you may wish to learn about alternative methods such as [Cosmovisor](https://github.com/provenance-io/cosmovisor)  
   
 ## Important  
