@@ -105,3 +105,5 @@ Open RPC to your specific local machine's IP address to connect and interact wit
 
 ## Verify Node User Login is Disabled  
 `ssh -p xxxx gaia@ipaddress`  
+
+You are now ready to [install a node](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/02_install_node.md)  
