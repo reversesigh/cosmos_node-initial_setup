@@ -20,8 +20,8 @@ This will extract the snapshot to your chain data folder. Once complete, you sho
   
 ## State Sync
 
-This is my preferred method for syncing up a new node. Run a command similar to this one one most chains to get a trusted hash and block height. Replace `ipaddress` with a public RPC address:
-
+This is my preferred method for syncing up a new node. Run a command similar to this one one most chains to get a trusted hash and block height. Replace `Polkachu`'s RPC in the example with a public RPC address that fits your needs:  
+  
 `curl -s https://cosmos-rpc.polkachu.com:443/commit | jq "{height: .result.signed_header.header.height, hash: .result.signed_header.commit.block_id.hash}"`
 
 You can then enabled state sync in `config.toml` and input the information for state sync. Remember to include two entires for `rpc_servers`:  
