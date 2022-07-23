@@ -56,7 +56,7 @@ You may notice that the command `unsafe-reset-all` in certain guides. Be *very* 
   
 Running this command will reset your chain data, `priv_validator_key.json` and `priv_validator_state.json`. If you are a validator, always make sure you have your `priv_validator_key.json` backed up safely.  
   
-An example of when you might want to use this is when your chain data becomes corrupted. You can run this command before extracting your snapshot or starting state sync: 
+An example of when you might want to use this is when your chain data becomes corrupted, requiring you to resync your node. You can run this command before extracting your snapshot or starting state sync: 
   
 `gaiad tendermint unsafe-reset-all --home /home/gaia/.gaia/`  
   
