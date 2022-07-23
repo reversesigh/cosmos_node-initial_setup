@@ -24,7 +24,7 @@ This is my preferred method for syncing up a new node. Run a command similar to 
   
 `curl -s https://cosmos-rpc.polkachu.com:443/commit | jq "{height: .result.signed_header.header.height, hash: .result.signed_header.commit.block_id.hash}"`
 
-You can then enabled state sync in `config.toml` and input the information for state sync. Remember to include two entires for `rpc_servers`:  
+You can then enable state sync in `config.toml` and input the information for state sync. Remember to include two entires for `rpc_servers`:  
   
 Default setting:  
   
