@@ -39,6 +39,8 @@ Once your state sync settings are set, run the following command.
 
 `sudo systemctl start gaiad && sudo journalctl -u gaiad -f --output cat`  
 
+## Sync Status
+
 You can check the status of your sync by running the following command.
 
 On the server run `curl localhost:26657/status` (change port if needed)  
