@@ -28,9 +28,9 @@ fi
 
 # GoLang
 GOROOT=/usr/local/go
-GOPATH=/home/gaia/go
+GOPATH=$HOME/go
 GO111MODULE=on
-PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/usr/local/go/bin:/home/rbatty/go/bin
+PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 # PATH for gaiad
 # Uncomment for users other than gaia
