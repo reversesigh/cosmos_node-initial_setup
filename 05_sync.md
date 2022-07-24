@@ -43,6 +43,8 @@ Here is an example of what your edited configuration for state sync should look 
 `trust_height = 11377513`  
 `trust_hash = "E95A010386958C240862CD934D6B46D8104EEDECCCF3249613E31B13E9E22CC1"`  
 `trust_period = "168h0m0s"`  
+
+Make sure State Sync is enabled as well.
   
 You can also find working state sync settings via [Polkachu](https://polkachu.com/state_sync/cosmos). They provide a script you can execute that will automatically update your `config.toml` with the correct state sync settings.  
 
