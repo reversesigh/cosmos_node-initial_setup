@@ -67,7 +67,7 @@ Now that youre node is fully synced and live, let's make an [SSH Key](https://gi
   
 You may notice that the command `unsafe-reset-all` in certain guides. Be *very* careful with this command, especially if you are a validator. There is a reason the word `unsafe` is used.  
   
-Running this command will reset your chain data, `priv_validator_key.json` and `priv_validator_state.json`. If you are a validator, always make sure you have your `priv_validator_key.json` backed up safely.  
+Running this command will reset your chain data and reset your `priv_validator_state.json`to the genesis state. If you are a validator, always make sure you have your `priv_validator_key.json` backed up safely.  
   
 An example of when you might want to use this is when your chain data becomes corrupted, requiring you to resync your node. You can run this command before extracting your snapshot or starting state sync: 
   
