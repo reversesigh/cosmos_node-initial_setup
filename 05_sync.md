@@ -28,8 +28,6 @@ You can then enable state sync in `config.toml` and input the information for st
   
 Default setting:  
   
-`# For Cosmos SDK-based chains, trust_period should usually be about 2/3 of the unbonding time (~2`   
-`# weeks) during which they can be financially punished (slashed) for misbehavior.`  
 `rpc_servers = ""`  
 `trust_height = 0`  
 `trust_hash = ""`  
@@ -37,8 +35,6 @@ Default setting:
   
 Here is an example of what your edited configuration for state sync should look like: 
   
-`# For Cosmos SDK-based chains, trust_period should usually be about 2/3 of the unbonding time (~2`   
-`# weeks) during which they can be financially punished (slashed) for misbehavior.`  
 `rpc_servers = "https://cosmos-rpc.polkachu.com:443,https://cosmos-rpc.polkachu.com:443"`  
 `trust_height = 11377513`  
 `trust_hash = "E95A010386958C240862CD934D6B46D8104EEDECCCF3249613E31B13E9E22CC1"`  
@@ -47,11 +43,6 @@ Here is an example of what your edited configuration for state sync should look 
 Make sure State Sync is enabled as well.  
   
 `[statesync]`  
-`# State sync rapidly bootstraps a new node by discovering, fetching, and restoring a state machine`  
-`# snapshot from peers instead of fetching and replaying historical blocks. Requires some peers in`  
-`# the network to take and serve state machine snapshots. State sync is not attempted if the node`  
-`# has any local state (LastBlockHeight > 0). The node will have a truncated block history,`  
-`# starting from the height of the snapshot.`  
 `enable = true`  
   
 You can also find working state sync settings via [Polkachu](https://polkachu.com/state_sync/cosmos). They provide a script you can execute that will automatically update your `config.toml` with the correct state sync settings.  
