@@ -52,7 +52,7 @@ Make sure State Sync is enabled as well.
 `# the network to take and serve state machine snapshots. State sync is not attempted if the node`  
 `# has any local state (LastBlockHeight > 0). The node will have a truncated block history,`  
 `# starting from the height of the snapshot.`  
-`enable = false`  
+`enable = true`  
   
 You can also find working state sync settings via [Polkachu](https://polkachu.com/state_sync/cosmos). They provide a script you can execute that will automatically update your `config.toml` with the correct state sync settings.  
 
