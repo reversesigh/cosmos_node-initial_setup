@@ -34,8 +34,4 @@ PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
 
 # PATH for gaiad
 # Uncomment for users other than gaia
-# PATH=$PATH:/home/gaia/go/bin/
-
-# Local Bin
-# Uncomment for users as needed for chains such as Secret Network, or other binaries you have placed in this folder.
-# PATH=$PATH:/usr/local/bin/
+# PATH=$PATH:/home/gaia/go/bin
