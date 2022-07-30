@@ -7,7 +7,7 @@ Direct yourself to your node's configuation folder.
   
 `cd ~/.gaiad/config/`  
   
-Set your preferred pruning settings. Here is an example set of commands to run while located inside your `config` directory. Update values to your preference and space needs (the numbers below are for tight pruning). If you ever find your chain data is taking up too much space, consider using tools such as [cosmprund](https://github.com/binaryholdings/cosmprund).  If you are running an archive node then you can ignore this, otherwise copy/paste the following into your terminal:  
+Set your preferred pruning settings. Here is an example set of commands to run while located inside your `config` directory. Update values to your preference and space needs (the numbers below are for tight pruning). If you ever find your chain data is taking up too much space, consider using tools such as [cosmprund](https://github.com/binaryholdings/cosmprund).  If you are running an archive node then you can ignore this, otherwise edit values as you need and copy/paste the following into your terminal:  
   
 `pruning="custom" && \`  
 `pruning_keep_recent=107 && \`  
