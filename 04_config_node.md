@@ -41,10 +41,13 @@ If you wish to access your node remotely from a local machine, you'll also need 
   
 You'll also need to add peers before you start syncing. Most blockchains will have a network repository featuring peer lists, genesis files, etc., Another great option is to use [Polkachu](https://polkachu.com/networks/cosmos) if they have the chain resources available on their website. You can find resources for state sync, snapshot sync, peers, etc.,
   
-When adding peers, make they are placed inbetween quotes, divided by commas with no spaces. For example: 
+When adding seeds or peers, make they are placed inbetween quotes, divided by commas with no spaces. For example: 
   
+`seeds = ade4d8bc8cbe014af6ebdf3cb7b1e9ad36f412c0@seeds.polkachu.com:14956"`
 `persistent_peers = "cf10a45ead9e76d45b06dee97ef779e65103c78e@3.128.185.235:26656,91d50a7faf28fe301085f340a7d98a518e1243bd@44.236.220.165:26656"`
   
+The best practice for peering is to avoid adding persistent peers you do not know personally. Having a few solid seed nodes instead should be enough to build up a solid address book. This means you could technically run a stable node without any persistent peers. Trust the system.
+
 After you are done editing `config.toml` be sure to press CTRL+X and save any changes you made.  
 
 You are now ready to [sync your node](https://github.com/reversesigh/cosmos_node-initial_setup/blob/main/05_sync.md) 
